@@ -1,0 +1,10 @@
+{
+  "name": "my-first-component",
+  "dependencies": {
+    "necolas/normalize.css": "^3.0.3",
+    "visionmedia/superagent": "^1.1.0"
+  },
+  "scripts": [
+    "index.js"
+  ]
+}
