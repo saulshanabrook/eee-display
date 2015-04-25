@@ -1,13 +1,13 @@
 import React from 'react'
 import {Segment} from 'react-semantify'
 
-import UsefulLinks from './UsefulLinks'
+import Posts from './Posts'
 
 const Home = React.createClass({
     render() {
         return (
             <Segment>
-                <UsefulLinks title="React useful links"/>
+                <Posts title="React useful links"/>
             </Segment>
         )
     }

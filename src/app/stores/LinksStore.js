@@ -6,7 +6,7 @@ const LinksStore = Reflux.createStore({
     listenables: [LinksActions],
 
     onLoadDataSuccess: function (data) {
-        this.trigger({links: data});
+        this.trigger({posts: data});
     }
 });
 
