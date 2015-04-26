@@ -17,9 +17,9 @@ const App = React.createClass({
                         <i className="home icon"></i>
                         Home
                     </Link>
-                    <Link to="about" className="item">
+                    <Link to="signin" className="item">
                         <i className="bomb icon"></i>
-                        About
+                        Sign In
                     </Link>
                 </Menu>
                 <RouteHandler/>

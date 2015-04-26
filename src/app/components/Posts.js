@@ -3,9 +3,8 @@ import Reflux from 'reflux'
 
 import {List, Item, Divider} from 'react-semantify'
 
-
-import LinksActions from '../actions/LinksActions'
-import LinksStore from '../stores/LinksStore'
+import PostsActions from '../actions/PostsActions'
+import PostsStore from '../stores/PostsStore'
 import {m} from '../lib/tools'
 
 const T = React.PropTypes
@@ -59,22 +58,12 @@ const Post = React.createClass({
 
 
 const Posts = React.createClass({
-    mixins: [Reflux.listenTo(LinksStore, 'linksUpdate')],
+    mixins: [Reflux.connect(PostsStore, 'posts')],
 
     propTypes: {
         title: T.string.isRequired
     },
-    getInitialState() {
-        return {
-            posts: []
-        }
-    },
-    linksUpdate(data) {
-        this.setState({posts: data.posts})
-    },
-    componentWillMount() {
-        LinksActions.loadData()
-    },
+
     render() {
         if (!this.state.posts.length) {
             return <span/>

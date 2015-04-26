@@ -1,5 +1,6 @@
-const React = require('react');
-import {mount} from './app/lib/tools';
+const React = require('react')
+require('es6-promise').polyfill();
+import {mount} from './app/lib/tools'
 
 // For mounting App component into <section id="app"></section> use:
 //
@@ -8,24 +9,24 @@ import {mount} from './app/lib/tools';
 //
 // else
 
-import App from './app/components/App';
-import Home from './app/components/Home';
-import About from './app/components/About';
+import App from './app/components/App'
+import Home from './app/components/Home'
+import SignIn from './app/components/SignIn'
 
-const Router = require('react-router');
-const Route = Router.Route;
-const DefaultRoute = Router.DefaultRoute;
+const Router = require('react-router')
+const Route = Router.Route
+const DefaultRoute = Router.DefaultRoute
 
 const routes = (
     <Route name="app" path="/" handler={App}>
         <Route name="home" handler={Home}/>
-        <Route name="about" handler={About}/>
+        <Route name="signin" handler={SignIn}/>
         <DefaultRoute handler={Home}/>
     </Route>
 );
 
 Router.run(routes, function (Handler) {
-    React.render(<Handler/>, document.getElementById('app'));
+    React.render(<Handler/>, document.getElementById('app'))
 });
 
 // or HTML5 pushstate history:
