@@ -21,13 +21,13 @@ const routes = (
     <Route name="app" path="/" handler={App}>
         <Route name="home" handler={Home}/>
         <Route name="signin" handler={SignIn}/>
-        <DefaultRoute handler={Home}/>
+        <DefaultRoute handler={SignIn}/>
     </Route>
-);
+)
 
 Router.run(routes, function (Handler) {
     React.render(<Handler/>, document.getElementById('app'))
-});
+})
 
 // or HTML5 pushstate history:
 //Router.run(routes, Router.HistoryLocation, function (Handler) {

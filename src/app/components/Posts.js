@@ -3,7 +3,6 @@ import Reflux from 'reflux'
 
 import {List, Item, Divider} from 'react-semantify'
 
-import PostsActions from '../actions/PostsActions'
 import PostsStore from '../stores/PostsStore'
 import {m} from '../lib/tools'
 

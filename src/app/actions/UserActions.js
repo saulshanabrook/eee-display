@@ -5,7 +5,8 @@ import 'whatwg-fetch'
 // The store is listening to all actions, and the components in turn are listening to the store.
 // Thus the flow is: User interaction -> component calls action -> store reacts and triggers -> components update
 const UserActions = Reflux.createActions({
-    'login': {asyncResult: true, children: ["progressed"]}
+    'login': {asyncResult: true, children: ["progressed"]},
+    'giveRouter': {}
 })
 
 
@@ -23,8 +24,6 @@ function json(response) {
 
 
 UserActions.login.listenAndPromise(function(data) {
-    console.log(JSON.stringify(data))
-
     return fetch('https://eee-api.herokuapp.com/', {
         method: 'post',
         headers: {

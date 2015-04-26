@@ -15,14 +15,11 @@ const SignIn = React.createClass({
 
     _onClick() {
         var data = _.mapValues(this.refs, function (value) {return value.getDOMNode().value}, this)
+        UserActions.giveRouter(this.context.router)
         UserActions.login(data)
-//this.context.router.transitionTo('home');
     },
 
-
-
     render() {
-        console.log(this)
         return (
             <Form className="exampleform">
               <Fields className="two">
@@ -44,7 +41,7 @@ const SignIn = React.createClass({
               <Field>
                 <Label>ID</Label>
                 <Input className="icon">
-                  <input placeholder="ID" type="int" ref="id_number" defaultValue="50081"/>
+                  <input placeholder="ID" type="int" ref="id_number" defaultValue="49746"/>
                 </Input>
               </Field>
               <Field>
@@ -71,5 +68,9 @@ const SignIn = React.createClass({
         )
     }
 })
+
+SignIn.contextTypes = {
+  router: React.PropTypes.func.isRequired
+};
 
 export default SignIn

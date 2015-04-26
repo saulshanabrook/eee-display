@@ -1,0 +1,2013 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"con",
+				"console"
+			],
+			[
+				"router",
+				"router"
+			],
+			[
+				"pa",
+				"page_number"
+			],
+			[
+				"id",
+				"id_number"
+			],
+			[
+				"defa",
+				"defaultValue"
+			],
+			[
+				"de",
+				"defaultValue"
+			],
+			[
+				"for",
+				"formData"
+			],
+			[
+				"User",
+				"UserActions"
+			],
+			[
+				"dst",
+				"dstnet"
+			],
+			[
+				"src",
+				"srcport"
+			],
+			[
+				"re",
+				"ratelimit"
+			],
+			[
+				"form",
+				"format_line"
+			],
+			[
+				"P",
+				"ParseRegex"
+			],
+			[
+				"matc",
+				"match_udp_or_tcp"
+			],
+			[
+				"str",
+				"strategy"
+			],
+			[
+				"BIT",
+				"BITS_IN_PORT"
+			],
+			[
+				"net",
+				"net_or_any"
+			],
+			[
+				"Ip",
+				"IPv4Address"
+			],
+			[
+				"port",
+				"portnames	statement"
+			],
+			[
+				"flas",
+				"flask_ws"
+			],
+			[
+				"get_",
+				"get_header"
+			],
+			[
+				"get",
+				"get_next_hop"
+			],
+			[
+				"get_he",
+				"get_header_index"
+			],
+			[
+				"hea",
+				"header_index"
+			],
+			[
+				"IP",
+				"IP_OF_SENDING_INTERFACE"
+			],
+			[
+				"des",
+				"destip"
+			],
+			[
+				"IP_",
+				"IP_OF_SENDING_INTERFACE"
+			],
+			[
+				"icmp",
+				"icmpcode"
+			],
+			[
+				"ICMP",
+				"ICMPType"
+			],
+			[
+				"out",
+				"output_interface"
+			],
+			[
+				"is",
+				"isinstance"
+			],
+			[
+				"log_",
+				"log_function"
+			],
+			[
+				"nam",
+				"namespace	statement"
+			],
+			[
+				"name",
+				"namespace	param"
+			],
+			[
+				"log",
+				"log_function	param"
+			],
+			[
+				"def",
+				"defaultdict"
+			],
+			[
+				"cont",
+				"container_class"
+			],
+			[
+				"Log",
+				"LogContainer"
+			],
+			[
+				"__se",
+				"__setitem__	function"
+			],
+			[
+				"class",
+				"classmethod	class"
+			],
+			[
+				"mak",
+				"make_log"
+			],
+			[
+				"__sub",
+				"__subclasscheck__	function"
+			],
+			[
+				"cour",
+				"course_num	param"
+			],
+			[
+				"ap",
+				"applicant	forflow"
+			],
+			[
+				"app",
+				"Applicant	import"
+			],
+			[
+				"fie",
+				"field_name	param"
+			],
+			[
+				"set",
+				"setattr	function"
+			],
+			[
+				"fi",
+				"field_name	param"
+			],
+			[
+				"med",
+				"media_url_file"
+			],
+			[
+				"media",
+				"media_url"
+			],
+			[
+				"request",
+				"request_number"
+			],
+			[
+				"sent",
+				"sent_time"
+			],
+			[
+				"ip",
+				"ipaddress"
+			],
+			[
+				"dict",
+				"dictionary"
+			],
+			[
+				"ipa",
+				"ipaddress"
+			],
+			[
+				"int",
+				"interface"
+			],
+			[
+				"add",
+				"address"
+			],
+			[
+				"next",
+				"next_hop"
+			],
+			[
+				"I",
+				"IPv4Address	class"
+			],
+			[
+				"date",
+				"datetime	class"
+			],
+			[
+				"Nam",
+				"namedtuple"
+			],
+			[
+				"ARP",
+				"ARP_REQUEST_MAX_TRIES	statement"
+			],
+			[
+				"req",
+				"request_number"
+			],
+			[
+				"d",
+				"defaultdict	class"
+			],
+			[
+				"network",
+				"network_to_mac"
+			],
+			[
+				"p",
+				"pkt	statement"
+			],
+			[
+				"dic",
+				"dictionary	param"
+			],
+			[
+				"di",
+				"dictionary	param"
+			],
+			[
+				"ma",
+				"mask	statement"
+			],
+			[
+				"ipv",
+				"IPv4Network	class"
+			],
+			[
+				"fil",
+				"filename	param"
+			],
+			[
+				"prod_my",
+				"prod_mysql_db_name"
+			],
+			[
+				"host",
+				"hostname"
+			],
+			[
+				"dev_mysql_d",
+				"dev_mysql_django_settings"
+			],
+			[
+				"dev",
+				"dev_mysql_django_settings"
+			],
+			[
+				"djang",
+				"django-sis"
+			],
+			[
+				"prod",
+				"prod_pg_db_name"
+			],
+			[
+				"django",
+				"django-sis"
+			],
+			[
+				"prod_pg_",
+				"prod_pg_django_settings"
+			],
+			[
+				"dev_mysq",
+				"dev_mysql_django_settings_file"
+			],
+			[
+				"dev_pg",
+				"dev_pg_django_settings_file"
+			],
+			[
+				"dja",
+				"django-sis"
+			],
+			[
+				"prod_",
+				"prod_pg_db_name"
+			],
+			[
+				"prod_pg",
+				"prod_pg_username"
+			],
+			[
+				"dev_pg_",
+				"dev_pg_django_settings"
+			],
+			[
+				"dev_js",
+				"dev_json_dump_location"
+			],
+			[
+				"dev_mys",
+				"dev_mysql_docker_tag"
+			],
+			[
+				"vol",
+				"volumes_from"
+			],
+			[
+				"manage",
+				"management"
+			],
+			[
+				"Unk",
+				"UnkownResponse"
+			],
+			[
+				"par",
+				"parsed_data	statement"
+			],
+			[
+				"cal",
+				"calculated_checksum	statement"
+			],
+			[
+				"post",
+				"post_status"
+			],
+			[
+				"setSt",
+				"setStatus"
+			],
+			[
+				"Bas",
+				"BaseMessageBoardException	class"
+			],
+			[
+				"M",
+				"MAX_MESSAGE_LENGTH	statement"
+			],
+			[
+				"com",
+				"_communicate"
+			],
+			[
+				"fish",
+				"fish_theme"
+			],
+			[
+				"fo",
+				"format	function"
+			],
+			[
+				"r",
+				"r_bytes	statement"
+			],
+			[
+				"Dim",
+				"DimmerMap	map[Dimmer]Level ʈ"
+			],
+			[
+				"dim",
+				"DimmerMap	map[Dimmer]Level ʈ"
+			],
+			[
+				"Di",
+				"Dimmer	int ʈ"
+			],
+			[
+				"Le",
+				"Levelable	interface ¡"
+			],
+			[
+				"L",
+				"Label	ColorLabel ν"
+			],
+			[
+				"Col",
+				"ColorResolver	interface ¡"
+			],
+			[
+				"DI",
+				"DirectLevel	struct ʈ"
+			],
+			[
+				"Sta",
+				"StateStack	struct ʈ"
+			],
+			[
+				"no",
+				"notebooks"
+			],
+			[
+				"CA",
+				"CALIBRATE_PATH"
+			],
+			[
+				"lo",
+				"log_S"
+			],
+			[
+				"Com",
+				"CommandError"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/saul/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 1455,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".eslintignore",
+			"settings":
+			{
+				"buffer_size": 12,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "eee.sublime-project",
+			"settings":
+			{
+				"buffer_size": 99,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "user",
+		"selected_items":
+		[
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"push",
+				"git: push"
+			],
+			[
+				"status",
+				"git: status"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"sett user",
+				"Preferences: Settings - User"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"choose",
+				"SublimeLinter: Choose Mark Style"
+			],
+			[
+				"choo",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"cho",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"linter sett",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"remoe",
+				"BracketHighlighter: Remove Brackets"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON (Babel)"
+			],
+			[
+				"java ",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"markd",
+				"Set Syntax: Makefile Improved"
+			],
+			[
+				"python",
+				"Set Syntax: PythonImproved"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"disale",
+				"Package Control: Disable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"wrap",
+				"Wrap Plus: Wrap Lines"
+			],
+			[
+				"set text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"lint",
+				"MarkdownEditing: Markdown Lint"
+			],
+			[
+				"mark tro",
+				"MarkdownTOC:Insert TOC"
+			],
+			[
+				"mark lint",
+				"MarkdownEditing: Markdown Lint"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"improved",
+				"Set Syntax: PythonImproved"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"di",
+				"git: diff current file"
+			],
+			[
+				"comment",
+				"Toggle Comment"
+			],
+			[
+				"new view",
+				"File: New View into File"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"preview",
+				"OmniMarkupPreviewer: Preview Current Markup in Browser"
+			],
+			[
+				"markdow",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"pull",
+				"git: pull"
+			],
+			[
+				"pusg",
+				"git: push to existing branch"
+			],
+			[
+				"python i",
+				"Set Syntax: PythonImproved"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"sublime li",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"project",
+				"Project: Add Folder"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"commit",
+				"git: quick stage current file and commit"
+			],
+			[
+				"git ",
+				"git: status"
+			],
+			[
+				"git stat",
+				"git: status"
+			],
+			[
+				"upg",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"github",
+				"github: open file on remote"
+			],
+			[
+				"syntax make",
+				"Set Syntax: Makefile Improved"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"amme",
+				"Git: Amend Commit"
+			],
+			[
+				"stat",
+				"View: Toggle Status Bar"
+			],
+			[
+				"revea",
+				"File: Reveal"
+			],
+			[
+				"reveal",
+				"File: Reveal"
+			],
+			[
+				"color sc",
+				"Package Control: Discover Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"python imp",
+				"Set Syntax: PythonImproved"
+			],
+			[
+				"brow",
+				"SFTP: Browse Server…"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"edit",
+				"SFTP: Edit Server…"
+			],
+			[
+				"sft",
+				"SFTP: Browse Server…"
+			],
+			[
+				"browse ser",
+				"SFTP: Browse Server…"
+			],
+			[
+				"serv",
+				"SFTP: Browse Server…"
+			],
+			[
+				"sf",
+				"SFTP: Setup Server…"
+			],
+			[
+				"dock",
+				"Set Syntax: Dockerfile"
+			],
+			[
+				"",
+				"Auto indent"
+			],
+			[
+				"format",
+				"PEP8: Format Code"
+			],
+			[
+				"com",
+				"Toggle Comment"
+			],
+			[
+				"buil",
+				"Build: Build"
+			],
+			[
+				"set sy go",
+				"Set Syntax: Go"
+			],
+			[
+				"FMT",
+				"GoSublime: Fmt and save"
+			],
+			[
+				"fmt",
+				"GoSublime: Fmt and save"
+			],
+			[
+				"pul",
+				"Git: Pull"
+			],
+			[
+				"dupl",
+				"File: Duplicate"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"path",
+				"File: Copy Path From Project"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"pus",
+				"Git: Push Current Branch"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"sta",
+				"View: Toggle Status Bar"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"tog",
+				"Toggle Comment"
+			],
+			[
+				"remote",
+				"Git: Add Remote"
+			],
+			[
+				"check",
+				"Git: Checkout New Branch"
+			],
+			[
+				"privew",
+				"OmniMarkupPreviewer: Preview Current Markup in Browser"
+			],
+			[
+				"omni",
+				"OmniMarkupPreviewer: Export Current Markup as HTML"
+			],
+			[
+				"restr",
+				"Set Syntax: reStructuredText Improved"
+			],
+			[
+				"sidebar",
+				"Git (SideBarGit): Status"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"statu",
+				"View: Toggle Status Bar"
+			]
+		],
+		"width": 529.0
+	},
+	"console":
+	{
+		"height": 387.0,
+		"history":
+		[
+			"call(['which', 'jsxhint'], stdout=True)",
+			"call(['which', 'jsxhint'])",
+			"from subprocess import call",
+			"!which ",
+			"which jsxhint",
+			"os.environ['PATH']",
+			"import os",
+			"' '.join([\"-v\", \"-t\", \"--nohandle\", \"-s\", \"routertests2.srpy\", \"myrouter.py\"])",
+			"sd",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/saul/projects/eee",
+		"/Users/saul/projects/eee/src",
+		"/Users/saul/projects/eee/src/app",
+		"/Users/saul/projects/eee/src/app/components",
+		"/Users/saul/projects/eee/src/styles"
+	],
+	"file_history":
+	[
+		"/Users/saul/projects/eee/.eslintignore",
+		"/Users/saul/projects/eee/src/app/actions/UserActions.js",
+		"/Users/saul/projects/eee/src/app/components/SignIn.js",
+		"/Users/saul/projects/eee/eee/edx_edge.py",
+		"/Users/saul/projects/eee/eee/server.py",
+		"/Users/saul/projects/eee/requirements.txt",
+		"/Users/saul/projects/eee/src/app/actions/PostsActions.js",
+		"/Users/saul/projects/eee/src/app/stores/UserStore.js",
+		"/Users/saul/projects/eee/src/app/stores/PostsStore.js",
+		"/Users/saul/projects/eee/src/app/components/Posts.js",
+		"/Users/saul/projects/eee/src/app/components/App.js",
+		"/Users/saul/projects/eee/src/index.js",
+		"/Users/saul/projects/eee/.eslintrc",
+		"/Users/saul/projects/eee/src/app/actions/LinksActions.js",
+		"/Users/saul/projects/eee/src/app/components/About.js",
+		"/Users/saul/projects/eee/src/app/stores/LinksStore.js",
+		"/Users/saul/projects/eee/README.md",
+		"/Users/saul/projects/eee/src/index.html",
+		"/Users/saul/projects/eee/Brocfile.js",
+		"/Users/saul/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/saul/projects/eee/src/app/components/Home.js",
+		"/Users/saul/Library/Application Support/Sublime Text 3/Packages/User/JavaScript (Babel).sublime-settings",
+		"/Users/saul/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/saul/projects/eee/docs/react-style-guide.md",
+		"/Users/saul/projects/cosc465-firewall/firewall.py",
+		"/Users/saul/projects/cosc465-firewall/test/__init__.py",
+		"/Users/saul/projects/cosc465-firewall/firewall/__init__.py",
+		"/Users/saul/projects/cosc465-firewall/test_firewall.py",
+		"/Users/saul/projects/cosc465-firewall/firewall_rules.txt",
+		"/Users/saul/projects/cosc465-firewall/Dockerfile",
+		"/Users/saul/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
+		"/Users/saul/projects/cosc465-firewall/requirements.txt",
+		"/Users/saul/projects/cosc465-firewall/firewalltests.py",
+		"/Users/saul/projects/cosc465-firewall/impairmenttest.py",
+		"/Users/saul/projects/cosc465-firewall/start_mininet.py",
+		"/Users/saul/projects/lighting/docs/design.md",
+		"/Users/saul/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown.sublime-settings",
+		"/Users/saul/projects/lighting/.travis.yml",
+		"/Users/saul/Library/Application Support/Sublime Text 3/Packages/User/Bold and Italic Markers.tmPreferences",
+		"/Users/saul/projects/django-sis/ecwsp/admissions/models.py",
+		"/Users/gdrcolgate/Public/Google Drive/P334Bill Zhang/hw3 Doppler shift and Length contraction of objects created by dots/hw3.py",
+		"/Users/gdrcolgate/Public/Google Drive/P334Bill Zhang/hw2 Doppler shift/hw2.py",
+		"/Users/gdrcolgate/Public/Google Drive/P334Bill Zhang/hw1 Length contraction/hw1(program).py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334 RebeccaRistQuantum/computationhw3.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334 RebeccaRistQuantum/CompHW1.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334 RebeccaRistQuantum/comp2final.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334JOMALLEY/Feb10/dopplershift.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334JOMALLEY/Feb10/dopplershiftlengthcontraction.py",
+		"/Users/saul/Downloads/mimms@colgate.edu.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334 Louis/python lorentz transform.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334 Louis/movingball.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334 Louis/dopplershift.py",
+		"/Users/saul/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/saul/projects/cosc465-iprouter/Dockerfile",
+		"/Users/saul/projects/cosc465-iprouter/debug_logging.py",
+		"/Users/saul/projects/cosc465-iprouter/forwarding_table.txt",
+		"/Users/saul/projects/cosc465-iprouter/output.log",
+		"/Users/saul/projects/cosc465-iprouter/stubs/switchyard/lib/topo/util.py",
+		"/Users/saul/projects/cosc465-iprouter/README.md",
+		"/Users/saul/projects/cosc465-iprouter/config.py",
+		"/Users/saul/projects/cosc465-iprouter/anaconda/anaconda_lib/jedi/evaluate/compiled/fake.py",
+		"/Users/saul/projects/cpython/Lib/test/test_abc.py",
+		"/Users/saul/projects/cpython/Lib/test/script_helper.py",
+		"/Users/saul/projects/cpython/Lib/test/support/__init__.py",
+		"/Users/saul/projects/cpython/.dockerignore",
+		"/Users/saul/projects/cpython/.gitignore",
+		"/Users/saul/.hgrc",
+		"/Users/saul/projects/cpython/Dockerfile",
+		"/Users/saul/projects/cpython/Doc/whatsnew/changelog.rst",
+		"/Users/saul/projects/cpython/Lib/test/test_tokenize.py",
+		"/usr/local/etc/tor/torrc.sample",
+		"/usr/local/etc/tor/torrc",
+		"/Users/saul/projects/lighting/testing-architectures/implementations/backend/go/old files/lighting/business.go",
+		"/Users/saul/projects/django-sis/ecwsp/discipline/models.py",
+		"/Users/saul/projects/django-sis/django_sis/settings.py",
+		"/Users/saul/projects/django-sis/ecwsp/admissions/migrations/0001_initial.py",
+		"/Users/saul/projects/django-sis/ecwsp/administration/migrations/0001_initial.py",
+		"/Users/saul/projects/bsc-ops/django-sis/migration/mysql_to_pg/fix_database.py",
+		"/Users/saul/projects/django-canadanewyork/tasks/push.py",
+		"/Users/saul/Documents/Math 214 Assignment for Unit 9",
+		"/Users/saul/projects/bsc-ops/django-sis/migration/import.sh",
+		"/Users/saul/.tmux.conf",
+		"/Users/saul/projects/bsc-ops/django-sis/migration/mysql_to_pg/setup_db.sh",
+		"/Users/saul/projects/bsc-ops/django-sis/migration/mysql_to_pg/setup_dev_server.sh",
+		"/Users/saul/projects/switchyard/Dockerfile",
+		"/Users/saul/projects/cosc465-iprouter/myrouter.py",
+		"/Users/saul/projects/cosc465-iprouter/stubs/switchyard/lib/packet/ripv2.py",
+		"/Users/saul/projects/cosc465-iprouter/stubs/switchyard/lib/packet/null.py",
+		"/Users/saul/projects/cosc465-iprouter/stubs/ipaddress.py",
+		"/Users/saul/projects/cosc465-iprouter/stubs/switchyard/lib/packet/tcp.py",
+		"/Users/saul/projects/cosc465-iprouter/stubs/switchyard/lib/packet/icmp.py",
+		"/Users/saul/projects/cosc465-iprouter/stubs/switchyard/lib/packet/ipv6.py",
+		"/Users/saul/projects/cosc465-iprouter/stubs/switchyard/lib/packet/__init__.py",
+		"/Users/saul/projects/cosc465-iprouter/stubs/switchyard/lib/common.py",
+		"/Users/saul/projects/cosc465-iprouter/stubs/switchyard/lib/packet/common.py",
+		"/Users/saul/projects/cosc465-iprouter/stubs/switchyard/lib/packet/ipv4.py",
+		"/Users/saul/projects/cosc465-iprouter/stubs/switchyard/lib/packet/arp.py",
+		"/Users/saul/projects/cosc465-iprouter/stubs/switchyard/lib/packet/ethernet.py",
+		"/Users/saul/Library/Application Support/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/Users/saul/projects/cosc465-iprouter/untitled.sublime-project",
+		"/Users/saul/projects/cosc465-iprouter/stubs/ipaddress.pyi",
+		"/Users/saul/projects/cosc465-iprouter/out/switchyard/lib/packet/__init__.py",
+		"/Users/saul/projects/cosc465-iprouter/out/switchyard/lib/topo/util.py",
+		"/Users/saul/Library/Application Support/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/Users/saul/projects/resume/resume.md",
+		"/Users/saul/projects/bsc-ops/django-sis/migration/mysql_to_pg/server_script.sh",
+		"/Users/saul/projects/bsc-ops/django-sis/migration/mysql_to_pg/Makefile",
+		"/Users/saul/projects/bsc-ops/django-sis/migration/mysql_to_pg/README.md",
+		"/Users/saul/projects/bsc-ops/django-sis/migration/move_files.py",
+		"/Users/saul/projects/bsc-ops/django-sis/migration/mysql_to_pg/settings_pg.py",
+		"/Users/saul/projects/bsc-ops/django-sis/migration/mysql_to_pg/send_and_run_server_script.sh",
+		"/Users/saul/projects/django-canadanewyork/configs/env/heroku.env",
+		"/Users/saul/projects/django-canadanewyork/configs/env/common.env",
+		"/Users/saul/projects/django-canadanewyork/configs/env/secret.env",
+		"/Users/saul/.config/fish/config.fish",
+		"/Users/saul/Desktop/Saul Shanabrook",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334 Linh Le Simulation/PHYS334 Linh Le Simulation 1/Length_contraction.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334  Max Kurzner PHYS 334-Assignments/Doppler Shift.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334 Katie Karnes PHYS 334/Doppler_shift.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334 Katie Karnes PHYS 334/Length_contraction.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334 Katie Karnes PHYS 334/points.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334 Jonah Kudler-Flam PHYS 334/quantumhw1code.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334 Jonah Kudler-Flam PHYS 334/hw2quantumredshift.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334 Jonah Kudler-Flam PHYS 334/hw3lorentz.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334  Max Kurzner PHYS 334-Assignments/Length Contraction.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS334  Max Kurzner PHYS 334-Assignments/Lorentz Transformation of Points.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS 334 Carolyn Morris/dopplershift.py",
+		"/Users/gdrcolgate/Public/Google Drive/PHYS 334 Carolyn Morris/lengthcontraction.py"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"-tmp/,-node_modules/",
+			"-tmp*,-node_modules*",
+			"",
+			"models.py",
+			"",
+			"models.py",
+			"",
+			"*.py",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console.log",
+			"Name",
+			"instituation",
+			"PostActions",
+			"PostAction",
+			"LinksStore",
+			"PostStore",
+			"LinksActions",
+			"about",
+			"action",
+			"celery",
+			"StudentWOrk",
+			"student",
+			"Applicant",
+			"reversion",
+			"print",
+			"pdb",
+			"storage",
+			"dumpdata",
+			"-v3",
+			"email_host",
+			"EMAIL_HOST",
+			"oauth",
+			"defauldict__getitem__name",
+			"try_forwarding_ipv4",
+			"next_hop",
+			".appendleft",
+			"appendleft",
+			"forward_ipv4_packet",
+			"try_forwarding_",
+			"forward_ipv4_packet",
+			"set_header",
+			"process_ipv4",
+			"ip_addr",
+			"IP_OF",
+			"ARP",
+			"destip",
+			"modify_pkt",
+			"dest_ip",
+			"dst_ip",
+			"src_ip",
+			"ICMPType",
+			"debug",
+			"forward_",
+			"self.net.send",
+			"send_packet",
+			"set_header",
+			"generate_icmp_echo_reply",
+			"ARPRequestInfo",
+			"repr",
+			"common.log_debug",
+			"__class__",
+			"class ABCMeta",
+			"__contains__",
+			"validate_abstract_methods",
+			"\nvalidate_abstract_methods",
+			"\n        self.validate_abstract_methods(Sequence, *required_methods)\n",
+			"Sequence",
+			"        import pdb; pdb.set_trace()",
+			"Sequence",
+			"Iterable",
+			"Container",
+			"Sized",
+			"Sequence",
+			"pdb",
+			"validate_abstract_methods",
+			"validate_isinstance",
+			"Container",
+			"def validate_abstract_methods",
+			"validate_abstract_methods",
+			"Container",
+			"Mapping",
+			"test",
+			"collections.abc",
+			"strip_python_stderr",
+			"rc = p.re",
+			"script_helper",
+			"def roundtrip(",
+			"roundtrip(",
+			"roundtrip",
+			"dumpdata",
+			"loaddata_",
+			"sleep",
+			"dumpdata",
+			"quot;",
+			"\\n",
+			"&quot;",
+			"Query",
+			"Faculty",
+			"schedule",
+			"Faculty",
+			"ForeignKey('sis.Faculty",
+			"ForeignKey('sis.Applicant",
+			"ForeignKey('",
+			"ForeignKey(Faculty",
+			"Faculty",
+			"cache_applicant_m2m",
+			"street",
+			"street = ",
+			"ForeignKey(Faculty",
+			"Faculty",
+			"Facultyu",
+			" Grade(",
+			"Grade(",
+			"Grade (",
+			"hostname",
+			"WorkT",
+			"work",
+			"sleep 1",
+			"fix_d",
+			"dumpdata",
+			"build",
+			"move_files",
+			"    \"object_id\": 133,\n",
+			"341",
+			"template",
+			"sudo -u ",
+			"dev_pg_django_settings_module",
+			"move_files",
+			"domain_file",
+			"dev_pg_psqlrc",
+			"/root/",
+			"dev_pg_psqlrc",
+			"psqlrc",
+			"ev",
+			"-v ",
+			"docker run \\\n-v /root/django-sis:/code/ \\\n-e DJANGO_SETTINGS_MODULE=django_sis.settings_pg \\\n--link pg-root-sis.cristoreyny.org-boston:postgres \\",
+			"root@bsc.burke-software.com"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"dstip",
+			"srcip",
+			"self.send",
+			"str",
+			"logging.debug",
+			"",
+			"\n",
+			"\"",
+			"root@bsc.burkesoftware.com",
+			"root@bsc.burke-software.com",
+			"# type",
+			"\"",
+			"{\\bf ",
+			"{\\bf",
+			"",
+			": ",
+			"DJANGO_SETTINGS_MODULE",
+			"(site)",
+			"pg_dumps",
+			"settings_pg",
+			"default_args",
+			"http://getbootstrap.com/2.3.2",
+			"logging.warning(",
+			"RUN",
+			"name = "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/saul/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1455,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1286,
+								1286
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_savvy.file_path": "/Users/saul/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": ".eslintignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12,
+								12
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_savvy.file_path": "/Users/saul/projects/eee/.eslintignore",
+							"git_savvy.repo_path": "/Users/saul/projects/eee",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "eee.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 99,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"git_savvy.file_path": "/Users/saul/projects/eee/eee.sublime-project",
+							"git_savvy.repo_path": "/Users/saul/projects/eee",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o:///Users/saul/projects/go/src/github.com/saulshanabrook/lighting":
+	{
+		"height": 86.0
+	},
+	"output.GitSavvy":
+	{
+		"height": 110.0
+	},
+	"output.GoSublime-output":
+	{
+		"height": 88.0
+	},
+	"output.autopep8":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 88.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-checkout":
+	{
+		"height": 88.0
+	},
+	"output.git-commit":
+	{
+		"height": 88.0
+	},
+	"output.git-init":
+	{
+		"height": 88.0
+	},
+	"output.git-pull":
+	{
+		"height": 88.0
+	},
+	"output.git-push":
+	{
+		"height": 88.0
+	},
+	"output.sftp":
+	{
+		"height": 30.0
+	},
+	"pinned_build_system": "",
+	"project": "eee.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"index",
+				"src/index.js"
+			],
+			[
+				"ind",
+				"src/index.html"
+			],
+			[
+				"dock",
+				"Dockerfile"
+			],
+			[
+				"workstumod",
+				"ecwsp/work_study/models.py"
+			],
+			[
+				"admissionmodel",
+				"ecwsp/admissions/models.py"
+			],
+			[
+				"setti",
+				"django_sis/settings.py"
+			],
+			[
+				"make",
+				"mysql_to_pg/Makefile"
+			],
+			[
+				"app",
+				"app.json"
+			],
+			[
+				"a",
+				"app.json"
+			],
+			[
+				"sett",
+				"configs/settings.py"
+			],
+			[
+				"doc",
+				"docker-compose.yml"
+			],
+			[
+				"do",
+				"Dockerfile"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"debug",
+				"debug_logging.py"
+			],
+			[
+				"deb",
+				"debug_logging.py"
+			],
+			[
+				"docker",
+				"Dockerfile"
+			],
+			[
+				"o",
+				"output.log"
+			],
+			[
+				"oout",
+				"stubs/switchyard/lib/topo/util.py"
+			],
+			[
+				"",
+				"config.py"
+			],
+			[
+				"readm",
+				"README.md"
+			],
+			[
+				"patch.",
+				"patch.diff"
+			],
+			[
+				"collectionabc",
+				"Lib/_collections_abc.py"
+			],
+			[
+				"testcollec",
+				"Lib/test/test_collections.py"
+			],
+			[
+				"testabc",
+				"Lib/test/test_abc.py"
+			],
+			[
+				"_collectin",
+				"Lib/_collections_abc.py"
+			],
+			[
+				"git",
+				".gitignore"
+			],
+			[
+				"whatsnew",
+				"Doc/whatsnew/changelog.rst"
+			],
+			[
+				"testscript_",
+				"Lib/test/script_helper.py"
+			],
+			[
+				"test_tokenize",
+				"Lib/test/test_tokenize.py"
+			],
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				"ecadmmode",
+				"ecwsp/admissions/models.py"
+			],
+			[
+				"adminmigrations",
+				"ecwsp/admissions/migrations/0001_initial.py"
+			],
+			[
+				"adminmigra",
+				"ecwsp/administration/migrations/0001_initial.py"
+			],
+			[
+				"push",
+				"tasks/push.py"
+			],
+			[
+				"req",
+				"requirements.txt"
+			],
+			[
+				"my",
+				"myrouter.py"
+			],
+			[
+				"ipv",
+				"stubs/switchyard/lib/packet/ipv4.py"
+			],
+			[
+				"tcp",
+				"stubs/switchyard/lib/packet/tcp.py"
+			],
+			[
+				"icmp",
+				"stubs/switchyard/lib/packet/icmp.py"
+			],
+			[
+				"ripv",
+				"stubs/switchyard/lib/packet/ripv2.py"
+			],
+			[
+				"swipacknul",
+				"stubs/switchyard/lib/packet/null.py"
+			],
+			[
+				"stubswlibpackicm",
+				"stubs/switchyard/lib/packet/icmp.py"
+			],
+			[
+				"settings",
+				"django_sis/settings.py"
+			],
+			[
+				"set",
+				"setup.py"
+			],
+			[
+				"tra",
+				".travis.yml"
+			],
+			[
+				"heroku",
+				"configs/env/heroku-dev.env"
+			],
+			[
+				"proc",
+				"Procfile"
+			],
+			[
+				"loca",
+				"configs/env/local.env"
+			],
+			[
+				"setting",
+				"configs/settings.py"
+			],
+			[
+				"reset",
+				"tasks/reset.py"
+			],
+			[
+				"docke",
+				"docker-compose.yml"
+			],
+			[
+				"wipe_",
+				"libs/common/management/commands/wipe_storage.py"
+			],
+			[
+				"apps",
+				"tasks/apps.py"
+			],
+			[
+				"base",
+				"tasks/base.py"
+			],
+			[
+				"local",
+				"configs/env/local.env"
+			],
+			[
+				"docker-",
+				"docker-compose.yml"
+			],
+			[
+				"settin",
+				"configs/settings.py"
+			],
+			[
+				"fig",
+				"static/bower_components/ckeditor/config.js"
+			],
+			[
+				"admimodels",
+				"ecwsp/admissions/models.py"
+			],
+			[
+				"ecsismodel",
+				"ecwsp/sis/models.py"
+			],
+			[
+				"work_study/mod",
+				"ecwsp/work_study/models.py"
+			],
+			[
+				"rq",
+				"requirements.txt"
+			],
+			[
+				"sismodel",
+				"ecwsp/sis/models.py"
+			],
+			[
+				"settings_l",
+				"django_sis/settings_local.py"
+			],
+			[
+				"sch0002",
+				"ecwsp/schedule/migrations/0002_auto_20140716_1655.py"
+			],
+			[
+				"dump",
+				"dump.json"
+			],
+			[
+				"init",
+				"flynn/slugrunner/runner/init"
+			],
+			[
+				"ini",
+				"init_alias.sh"
+			],
+			[
+				"slugrun",
+				"flynn/slugrunner/runner/init"
+			],
+			[
+				"build.",
+				"flynn/slugbuilder/builder/build.sh"
+			],
+			[
+				"mys",
+				"myslug.tgz"
+			],
+			[
+				"pro",
+				"Procfile"
+			],
+			[
+				"ecwsp/sis/models.py",
+				"ecwsp/sis/models.py"
+			],
+			[
+				"admmod",
+				"ecwsp/administration/models.py"
+			],
+			[
+				"geneimpo",
+				"general scripts/import.sh"
+			],
+			[
+				"admimodel",
+				"ecwsp/admissions/models.py"
+			],
+			[
+				"man",
+				"manage.py"
+			],
+			[
+				"sismod",
+				"ecwsp/sis/models.py"
+			],
+			[
+				"ecsmode",
+				"ecwsp/sis/models.py"
+			],
+			[
+				"ecmod",
+				"ecwsp/counseling/models.py"
+			],
+			[
+				"sismo",
+				"ecwsp/sis/models.py"
+			],
+			[
+				"loadsc",
+				"ecwsp/sis/management/commands/load_schema_data.py"
+			],
+			[
+				"dodev",
+				"docs/develop.rst"
+			],
+			[
+				"ecsismod",
+				"ecwsp/sis/models.py"
+			],
+			[
+				"sismode",
+				"ecwsp/sis/models.py"
+			],
+			[
+				"admission",
+				"ecwsp/admissions/models.py"
+			],
+			[
+				"admissionsmode",
+				"ecwsp/admissions/models.py"
+			],
+			[
+				"impo",
+				"general scripts/import.sh"
+			],
+			[
+				"du",
+				"dump.json"
+			],
+			[
+				"tmp/",
+				"tmp/all_databases.sql"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 244.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

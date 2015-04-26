@@ -3,8 +3,7 @@
   "parser": "babel-eslint",
   "env": {
     "browser": true,
-    "es6": true,
-    "server": true
+    "es6": true
   },
   // To give you an idea how to override rule options:
   "rules": {
