@@ -64,6 +64,7 @@ const Posts = React.createClass({
     },
 
     render() {
+        console.log(this.state)
         if (!this.state.posts.length) {
             return <span/>
         }

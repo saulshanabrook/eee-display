@@ -8,7 +8,7 @@ const UserStore = Reflux.createStore({
 
 
     state: {
-        data: {},
+        data: [],
         status: ''
     },
 
