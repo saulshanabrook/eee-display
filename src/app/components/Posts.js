@@ -1,21 +1,37 @@
 import React from 'react'
 import Reflux from 'reflux'
+import Remarkable from 'remarkable'
+import Timestamp from 'react-time'
 
-import {List, Item, Divider} from 'react-semantify'
+import {List, Item, Divider, Segment, Header, Checkbox} from 'react-semantify'
 
 import PostsStore from '../stores/PostsStore'
 import {m} from '../lib/tools'
 
 const T = React.PropTypes
+const md = new Remarkable()
 
+const Contribution = React.createClass({
+    render() {
+        return (
+            <div>
+                <p>
+                    <strong>{this.props.data.author} </strong>
+                    <i><Timestamp value={this.props.data.datetime} titleFormat="YYYY/MM/DD HH:mm" relative></Timestamp></i>
+                </p>
+                <Divider></Divider>
+                <div dangerouslySetInnerHTML={{__html: md.render(this.props.data.text)}}></div>
+            </div>
+        )
+    }
+})
 
 const Comment = React.createClass({
     render() {
         return (
-            <Item key={this.props.key}>
-                <p>{this.props.data.author} {this.props.data.datetime}</p>
-                <p>{this.props.data.text}</p>
-            </Item>
+            <Segment key={this.props.key}>
+                <Contribution data={this.props.data}></Contribution>
+            </Segment>
         )
     }
 })
@@ -23,34 +39,36 @@ const Comment = React.createClass({
 const Response = React.createClass({
     render() {
         return (
-            <Item key={this.props.key}>
-                {this.props.data.author} {this.props.data.datetime}
-                <p>{this.props.data.text}</p>
+            <Segment key={this.props.key}>
+                <Contribution data={this.props.data}></Contribution>
+
                 <List className="ordered">
                     {this.props.data.comments.map((item, key) =>
                         <Comment key={key} data={item}></Comment>
                     )}
                 </List>
-            </Item>
+            </Segment>
         )
     }
 })
 
 
 const Post = React.createClass({
+
+    componentDidMount() {
+    $(this.refs.checkbox.getDOMNode()).checkbox()
+    },
     render() {
         return (
-            <Item key={this.props.key}>
-                {this.props.data.title} {this.props.data.author} {this.props.data.datetime}
-                <p>{this.props.data.text}</p>
-               <List className="ordered">
-                    {this.props.data.responses.map((item, key) =>
-                        <Response key={key} data={item}></Response>
-                    )}
-                </List>
-                <Divider></Divider>
+            <Segment key={this.props.key}>
+            <Checkbox className="toggle" init={true} ref="checkbox"></Checkbox>
+                <Header>{this.props.data.title}</Header>
+                <Contribution data={this.props.data}></Contribution>
+                {this.props.data.responses.map((item, key) =>
+                    <Response key={key} data={item}></Response>
+                )}
 
-            </Item>
+            </Segment>
         )
     }
 })
@@ -64,17 +82,16 @@ const Posts = React.createClass({
     },
 
     render() {
-        console.log(this.state)
         if (!this.state.posts.length) {
             return <span/>
         }
 
         return (
-            <List className="ordered">
+            <div>
                 {this.state.posts.map((item, key) =>
                     <Post key={key} data={item}></Post>
                 )}
-            </List>
+            </div>
         )
     }
 })

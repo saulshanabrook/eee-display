@@ -13,7 +13,7 @@ const PostsStore = Reflux.createStore({
     parseData(userState) {
         var data = userState.data
 
-        if (data.length == 0) {
+        if (data.length === 0) {
             return
         }
         let posts = []
@@ -22,26 +22,26 @@ const PostsStore = Reflux.createStore({
             posts.push(post)
             post.title = oldPost.title
             post.author = oldPost.username
-            post.datetime = oldPost.created_at
+            post.datetime = new Date(oldPost.created_at)
             post.text = oldPost.body
             post.responses = []
-            for (let child of oldPost.children) {
+            for (let child of (oldPost.children || [])) {
                 let response = {}
                 response.author = child.username
-                response.datetime = child.created_at
+                response.datetime = new Date(child.created_at)
                 response.text = child.body
                 post.responses.push(response)
                 response.comments = []
-                for (let sub_child of child.children) {
+                for (let subChild of (child.children || [])) {
                     let comment = {}
-                    comment.author = sub_child.username
-                    comment.datetime = sub_child.created_at
-                    comment.text = sub_child.body
+                    comment.author = subChild.username
+                    comment.datetime = new Date(subChild.created_at)
+                    comment.text = subChild.body
                     response.comments.push(comment)
                 }
             }
         }
-        this.posts = posts;
+        this.posts = posts
         this.trigger()
 
 

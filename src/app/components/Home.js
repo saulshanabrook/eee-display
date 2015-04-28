@@ -6,11 +6,9 @@ import Posts from './Posts'
 const Home = React.createClass({
     render() {
         return (
-            <Segment>
-                <Posts title="React useful links"/>
-            </Segment>
+            <Posts title="React useful links"/>
         )
     }
-});
+})
 
 export default Home
