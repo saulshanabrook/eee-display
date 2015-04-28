@@ -8,23 +8,29 @@ const UserStore = Reflux.createStore({
 
 
     state: {
-        data: [],
-        status: ''
+        'status': '',
+        'email': 'sshanabrook@colgate.edu',
+        'password': '[8=PmYzWqCqs3h,ChhpNW',
+        'id_number': '32647',
+        'institution': 'ColgateX',
+        'course_num': 'CORE138',
+        'section': '2015_SP'
     },
 
     onGiveRouter(router) {
         this.router = router
     },
-    onLogin() {
+
+    onLogin(formData) {
+        this.state = formData
         this.state.status = 'progressing'
         this.trigger(this.state)
     },
 
-    onLoginCompleted(response) {
+    onLoginCompleted() {
         this.state.status = 'completed'
-        this.state.data = response
         this.trigger(this.state)
-        this.router.transitionTo('home');
+        this.router.transitionTo('home')
     },
 
     onLoginFailed() {

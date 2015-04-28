@@ -55,9 +55,6 @@ const Response = React.createClass({
 
 const Post = React.createClass({
 
-    componentDidMount() {
-    $(this.refs.checkbox.getDOMNode()).checkbox()
-    },
     render() {
         return (
             <Segment key={this.props.key}>

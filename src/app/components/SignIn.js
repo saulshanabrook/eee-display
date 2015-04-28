@@ -1,6 +1,6 @@
 import React from 'react'
 import Reflux from 'reflux'
-import {Form, Fields, Field, Label, Input, Icon, Button} from 'react-semantify'
+import {Input} from 'react-bootstrap'
 import _ from 'lodash'
 
 import UserActions from '../actions/UserActions'
@@ -11,66 +11,32 @@ const SignIn = React.createClass({
     contextTypes: {
       router: React.PropTypes.func
     },
-    mixins: [Reflux.connect(UserStore)],
+    mixins: [Reflux.connect(UserStore), React.addons.LinkedStateMixin],
 
-    _onClick() {
-        var data = _.mapValues(this.refs, function (value) {return value.getDOMNode().value}, this)
+
+    submit() {
         UserActions.giveRouter(this.context.router)
-        UserActions.login(data)
+        UserActions.login(_.omit(this.state, 'status'))
     },
 
     render() {
         return (
-            <Form className="exampleform">
-              <Fields className="two">
-                <Field>
-                  <Label>Email</Label>
-                  <Input className="icon">
-                    <input placeholder="Email" type="email" ref="email" defaultValue="sshanabrook@colgate.edu"/>
-                    <Icon className="user"/>
-                  </Input>
-                </Field>
-                <Field>
-                  <Label>Password</Label>
-                  <Input className="icon">
-                    <input placeholder="password" type="password" ref="password" defaultValue="[8=PmYzWqCqs3h,ChhpNW"/>
-                    <Icon className="lock"/>
-                  </Input>
-                </Field>
-              </Fields>
-              <Field>
-                <Label>ID</Label>
-                <Input className="icon">
-                  <input placeholder="ID" type="int" ref="id_number" defaultValue="32647"/>
-                </Input>
-              </Field>
-              <Field>
-                <Label>Institution</Label>
-                <Input className="icon">
-                  <input placeholder="Institution" type="text" ref="institution" defaultValue="ColgateX"/>
-                </Input>
-              </Field>
-              <Field>
-                <Label>Course Number</Label>
-                <Input className="icon">
-                  <input placeholder="Course Number" type="text" ref="course_num" defaultValue="CORE138"/>
-                </Input>
-              </Field>
-              <Field>
-                <Label>Section</Label>
-                <Input className="icon">
-                  <input placeholder="Section" type="text" ref="section" defaultValue="2015_SP"/>
-                </Input>
-              </Field>
-              <Button className="submit" onClick={this._onClick}>Go!</Button>
+            <form>
+              <Input type='email' label='Email' valueLink={this.linkState("email")}/>
+              <Input type='password' label='Password' valueLink={this.linkState("password")}/>
+              <Input type='text' label='ID' valueLink={this.linkState("id_number")}/>
+              <Input type='text' label='Institution' valueLink={this.linkState("institution")}/>
+              <Input type='text' label='Course Number' valueLink={this.linkState("course_num")}/>
+              <Input type='text' label='Section' valueLink={this.linkState("section")}/>
+              <Input type='submit' value='Submit button' onClick={this.submit} />
               {this.state.status}
-            </Form>
+            </form>
         )
     }
 })
 
 SignIn.contextTypes = {
   router: React.PropTypes.func.isRequired
-};
+}
 
 export default SignIn

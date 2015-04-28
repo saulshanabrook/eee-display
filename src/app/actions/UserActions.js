@@ -1,5 +1,6 @@
 import Reflux from 'reflux'
-import 'whatwg-fetch'
+window.fetch = null
+var fetch = require('isomorphic-fetch')
 
 // Each action is like an event channel for one specific event. Actions are called by components.
 // The store is listening to all actions, and the components in turn are listening to the store.
@@ -24,14 +25,14 @@ function json(response) {
 
 
 UserActions.login.listenAndPromise(function(data) {
-    return fetch('https://eee-api.herokuapp.com/', {
-        method: 'post',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    }).then(status).then(json)
+  return fetch('https://eee-api.herokuapp.com/', {
+      method: 'post',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+  }).then(status).then(json)
 })
 
 export default UserActions

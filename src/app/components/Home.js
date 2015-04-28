@@ -1,5 +1,4 @@
 import React from 'react'
-import {Segment} from 'react-semantify'
 
 import Posts from './Posts'
 

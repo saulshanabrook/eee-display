@@ -2,24 +2,17 @@ import _ from 'lodash'
 
 import Reflux from 'reflux'
 
+import UserActions from '../actions/UserActions'
 import UserStore from '../stores/UserStore'
 
 const PostsStore = Reflux.createStore({
-    init: function() {
-        this.listenTo(UserStore, this.parseData)
+    listenables: [UserActions],
 
-    },
-
-    parseData(userState) {
-        var data = userState.data
-
-        if (data.length === 0) {
-            return
-        }
-        let posts = []
+    onLoginCompleted(data) {
+        this.posts = []
         for (let oldPost of data) {
             let post = {}
-            posts.push(post)
+            this.posts.push(post)
             post.title = oldPost.title
             post.author = oldPost.username
             post.datetime = new Date(oldPost.created_at)
@@ -41,7 +34,6 @@ const PostsStore = Reflux.createStore({
                 }
             }
         }
-        this.posts = posts
         this.trigger()
 
 
