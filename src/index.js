@@ -18,7 +18,7 @@ const Route = Router.Route
 const DefaultRoute = Router.DefaultRoute
 const Redirect = Router.Redirect
 
-if (window.hasOwnProperty('data')) {
+if (window.hasOwnProperty('posts')) {
     React.render(
       <Posts />,
       document.getElementById('app')

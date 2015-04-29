@@ -8,11 +8,13 @@ import {Panel} from 'react-bootstrap'
 
 import PostActions from '../actions/PostActions'
 import PostsStore from '../stores/PostsStore'
+import UserStore from '../stores/UserStore'
 
 const T = React.PropTypes
 const md = new Remarkable()
 
 const Contribution = React.createClass({
+    mixins: [Reflux.connect(UserStore, 'user')],
 
     handleCheck(event) {
         PostActions.toggleChecked(this.props.data.id)
@@ -39,8 +41,14 @@ const Contribution = React.createClass({
         )
     },
     render() {
+        let ownerPost = (this.state.user.id_number == this.props.data.user_id)
+        if (ownerPost) {
+            var bsStyle = "primary"
+        } else {
+            var bsStyle = "default"
+        }
         return (
-            <Panel header={this.header(this.props.data)}>
+            <Panel header={this.header(this.props.data)} bsStyle={bsStyle}>
                 <div dangerouslySetInnerHTML={{__html: md.render(this.props.data.body)}}></div>
                 {(this.props.data.children || []).map((item, key) =>
                     <Contribution key={key} data={item}></Contribution>

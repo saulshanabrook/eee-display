@@ -31,7 +31,7 @@ const UserStore = Reflux.createStore({
     },
 
     getInitialState() {
-        return this.state
+        return window.user || this.state
     }
 })
 

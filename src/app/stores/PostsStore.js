@@ -26,7 +26,7 @@ const PostsStore = Reflux.createStore({
     },
 
     getInitialState() {
-        return window.data || this.posts
+        return window.posts || this.posts
     },
 
     findContribution(id, contributions) {

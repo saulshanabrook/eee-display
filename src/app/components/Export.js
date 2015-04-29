@@ -8,10 +8,11 @@ var fetch = require('isomorphic-fetch')
 
 
 import PostsStore from '../stores/PostsStore'
+import UserStore from '../stores/UserStore'
 
 
 const Export = React.createClass({
-    mixins: [Reflux.connect(PostsStore, 'posts')],
+    mixins: [Reflux.connect(PostsStore, 'posts'), Reflux.connect(UserStore, 'user')],
 
     componentWillMount() {
 
@@ -41,7 +42,7 @@ const Export = React.createClass({
 
     makeZip() {
       let zip = new JSZip()
-      this.state.js = 'window.data=' + JSON.stringify(this.state.posts) + ';' + this.state.js
+      this.state.js = 'window.posts=' + JSON.stringify(this.state.posts) + ';window.user=' + JSON.stringify(this.state.user) + ';' + this.state.js
       console.log(this.state.js)
       zip.file('index.js', this.state.js)
       zip.file('index.html', this.state.html)
