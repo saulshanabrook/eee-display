@@ -1,4 +1,7 @@
 # eee-display
+Allows you to export your Edx discussion posts.
+
+Uses [my EDx api](saulshanabrook/eee) to make requests.
 
 
 ## Install

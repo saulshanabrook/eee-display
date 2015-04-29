@@ -1,20 +1,13 @@
 import Reflux from 'reflux'
-
+import _ from 'lodash'
+import queryString from 'query-string'
 import UserActions from '../actions/UserActions'
 
 const UserStore = Reflux.createStore({
 
     listenables: [UserActions],
 
-    state: {
-        'status': '',
-        'email': 'sshanabrook@colgate.edu',
-        'password': '[8=PmYzWqCqs3h,ChhpNW',
-        'id_number': '32647',
-        'institution': 'ColgateX',
-        'course_num': 'CORE138',
-        'section': '2015_SP'
-    },
+    state: queryString.parse(location.search),
 
     onGiveRouter(router) {
         this.router = router
@@ -41,6 +34,5 @@ const UserStore = Reflux.createStore({
         return this.state
     }
 })
-
 
 export default UserStore

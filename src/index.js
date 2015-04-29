@@ -16,6 +16,7 @@ import Export from './app/components/Export'
 const Router = require('react-router')
 const Route = Router.Route
 const DefaultRoute = Router.DefaultRoute
+const Redirect = Router.Redirect
 
 if (window.hasOwnProperty('data')) {
     React.render(
@@ -25,10 +26,11 @@ if (window.hasOwnProperty('data')) {
 } else {
     const routes = (
         <Route name="app" path="/" handler={App}>
-            <Route name="posts" handler={Posts}/>
             <Route name="signin" handler={SignIn}/>
+            <Route name="posts" handler={Posts}/>
             <Route name="export" handler={Export}/>
-            <DefaultRoute handler={SignIn}/>
+            <Redirect from="/" to="signin" />
+
         </Route>
     )
     Router.run(routes, function (Handler) {

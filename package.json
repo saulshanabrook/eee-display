@@ -44,6 +44,7 @@
     "isomorphic-fetch": "^2.0.2",
     "lodash": "^3.7.0",
     "moment": "^2.10.2",
+    "query-string": "^1.0.0",
     "react": "^0.13.2",
     "react-router": "^0.13.2",
     "react-router-bootstrap": "^0.13.0",

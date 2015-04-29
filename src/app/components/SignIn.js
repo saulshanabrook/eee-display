@@ -1,6 +1,6 @@
 import React from 'react'
 import Reflux from 'reflux'
-import {Input} from 'react-bootstrap'
+import {Input, Button} from 'react-bootstrap'
 import _ from 'lodash'
 
 import UserActions from '../actions/UserActions'
@@ -13,9 +13,11 @@ const SignIn = React.createClass({
     },
     mixins: [Reflux.connect(UserStore), React.addons.LinkedStateMixin],
 
+    componentWillMount() {
+      UserActions.giveRouter(this.context.router)
+    },
 
     submit() {
-        UserActions.giveRouter(this.context.router)
         UserActions.login(_.omit(this.state, 'status'))
     },
 
@@ -30,7 +32,7 @@ const SignIn = React.createClass({
               <Input type='text' label='Institution' valueLink={this.linkState("institution")}/>
               <Input type='text' label='Course Number' valueLink={this.linkState("course_num")}/>
               <Input type='text' label='Section' valueLink={this.linkState("section")}/>
-              <Input type='submit' value='Submit button' onClick={this.submit} />
+              <Button onClick={this.submit}>Submit</Button>
               {this.state.status}
             </form>
         )
