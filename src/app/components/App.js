@@ -11,7 +11,7 @@ const RouteHandler = ReactRouter.RouteHandler
 const App = React.createClass({
     render() {
         return (
-            <div className="container-fluid">
+            <div>
                 <Navbar brand="Edge Edx Exporter">
                     <Nav>
                         <NavItemLink to="signin">Sign In</NavItemLink>
@@ -20,7 +20,6 @@ const App = React.createClass({
                     </Nav>
                 </Navbar>
                 <RouteHandler/>
-
             </div>
         )
     }

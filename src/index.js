@@ -17,18 +17,27 @@ const Router = require('react-router')
 const Route = Router.Route
 const DefaultRoute = Router.DefaultRoute
 
-const routes = (
-    <Route name="app" path="/" handler={App}>
-        <Route name="posts" handler={Posts}/>
-        <Route name="signin" handler={SignIn}/>
-        <Route name="export" handler={Export}/>
-        <DefaultRoute handler={SignIn}/>
-    </Route>
-)
+if (window.hasOwnProperty('data')) {
+    React.render(
+      <Posts />,
+      document.getElementById('app')
+    );
+} else {
+    const routes = (
+        <Route name="app" path="/" handler={App}>
+            <Route name="posts" handler={Posts}/>
+            <Route name="signin" handler={SignIn}/>
+            <Route name="export" handler={Export}/>
+            <DefaultRoute handler={SignIn}/>
+        </Route>
+    )
+    Router.run(routes, function (Handler) {
+        React.render(<Handler/>, document.getElementById('app'))
+    })
+}
 
-Router.run(routes, function (Handler) {
-    React.render(<Handler/>, document.getElementById('app'))
-})
+
+
 
 //or HTML5 pushstate history:
 // Router.run(routes, Router.HistoryLocation, function (Handler) {

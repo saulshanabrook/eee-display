@@ -55,9 +55,6 @@ const Contribution = React.createClass({
 const Posts = React.createClass({
     mixins: [Reflux.connect(PostsStore, 'posts')],
 
-    propTypes: {
-        title: T.string.isRequired
-    },
 
     render() {
         if (!this.state.posts.length) {
