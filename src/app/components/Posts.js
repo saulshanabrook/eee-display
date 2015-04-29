@@ -3,6 +3,7 @@ import Reflux from 'reflux'
 import Remarkable from 'remarkable'
 import Timestamp from 'react-time'
 import Moment from 'moment'
+import _ from 'lodash'
 
 import {Panel} from 'react-bootstrap'
 
@@ -16,45 +17,71 @@ const md = new Remarkable()
 const Contribution = React.createClass({
     mixins: [Reflux.connect(UserStore, 'user')],
 
-    handleCheck(event) {
-        PostActions.toggleChecked(this.props.data.id)
+    toggleHidden(e) {
+        e.preventDefault()
+        this.props.data.hidden = !this.props.data.hidden
+        this.forceUpdate()
     },
-
-    title(data) {
-        if (data.title) {
-            return <h2>{data.title}</h2>
+    ownerPost(){
+        return this.state.user.id_number == this.props.data.user_id
+    },
+    hasChildren(){
+        return this.props.data.hasOwnProperty('children')
+    },
+    getTitle() {
+        if (this.props.data.title) {
+            return <h2>{this.props.data.title}</h2>
         } else {
             return ''
         }
     },
-    header(data) {
-        let createdAt = new Moment(data.created_at)
+    getHeader() {
+        let createdAt = new Moment(this.props.data.created_at)
         return (
             <div>
-                <label className="pull-right">
-                  <input value={data.checked} onChange={this.handleCheck} type="checkbox"/> Display?
-                </label>
-                {this.title(data)}
-                <strong>{data.username} </strong>
+                {this.getTitle()}
+                <strong>{this.props.data.username} </strong>
                 <i><Timestamp value={createdAt} titleFormat="YYYY/MM/DD HH:mm" relative></Timestamp></i>
             </div>
         )
     },
-    render() {
-        let ownerPost = (this.state.user.id_number == this.props.data.user_id)
-        if (ownerPost) {
-            var bsStyle = "primary"
-        } else {
-            var bsStyle = "default"
+    getStyle() {
+        if (this.props.data.hidden) {
+            return 'danger'
         }
-        return (
-            <Panel header={this.header(this.props.data)} bsStyle={bsStyle}>
-                <div dangerouslySetInnerHTML={{__html: md.render(this.props.data.body)}}></div>
-                {(this.props.data.children || []).map((item, key) =>
+        return this.ownerPost() ? "primary" : "default"
+    },
+    validChildren() {
+        let children = this.props.data.children
+        if (this.exported()) {
+            return _.dropWhile(children, 'hidden', true)
+        } else {
+            return children
+        }
+    },
+    getChildren() {
+        if (this.hasChildren()) {
+            return this.validChildren().map((item, key) =>
                     <Contribution key={key} data={item}></Contribution>
-                )}
+            )
+        }
+    },
+    exported() {
+        return window.hasOwnProperty('posts')
+    },
+    render() {
+        this.initData()
+        return (
+            <Panel header={this.getHeader()} bsStyle={this.getStyle()} collapsable={!this.exported()} defaultExpanded={!this.props.data.hidden} onSelect={this.toggleHidden}>
+                <div dangerouslySetInnerHTML={{__html: md.render(this.props.data.body)}}></div>
+                {this.getChildren()}
             </Panel>
         )
+    },
+    initData() {
+        if (!this.props.data.hasOwnProperty('hidden')) {
+            this.props.data.hidden = false
+        }
     }
 })
 
