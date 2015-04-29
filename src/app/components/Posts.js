@@ -1,11 +1,12 @@
 import React from 'react'
 import Reflux from 'reflux'
 import Remarkable from 'remarkable'
-import Timestamp from 'react-time'
 import Moment from 'moment'
 import _ from 'lodash'
 
-import {Panel} from 'react-bootstrap'
+import Timestamp from 'react-time'
+import {Panel, Button} from 'react-bootstrap'
+import Toggle from 'react-toggle'
 
 import PostActions from '../actions/PostActions'
 import PostsStore from '../stores/PostsStore'
@@ -14,12 +15,37 @@ import UserStore from '../stores/UserStore'
 const T = React.PropTypes
 const md = new Remarkable()
 
+const Markdown = React.createClass({
+    render() {
+        return (
+            <div dangerouslySetInnerHTML={{__html: md.render(this.props.md)}}></div>
+        )
+    }
+})
+
+function filterChildren(children) {
+    if (window.hasOwnProperty('posts')) {
+        return _.dropWhile(children, 'hidden', true)
+    } else {
+        return children
+    }
+}
+
 const Contribution = React.createClass({
     mixins: [Reflux.connect(UserStore, 'user')],
-
-    toggleHidden(e) {
+    toggleCollapsed(e) {
         e.preventDefault()
+        this.props.data.collapsed = !this.props.data.collapsed
+        this.forceUpdate()
+    },
+    toggleHidden(e) {
         this.props.data.hidden = !this.props.data.hidden
+        if (this.props.data.hidden) {
+            this.props.data.collapsed = true
+            this.refs.panel.setState({expanded: false})
+        }
+        e.preventDefault()
+        e.stopPropagation()
         this.forceUpdate()
     },
     ownerPost(){
@@ -35,33 +61,41 @@ const Contribution = React.createClass({
             return ''
         }
     },
+    getButton() {
+        if (!this.exported()) {
+            return (
+                <div className="pull-right">
+                  <Button onClick={this.toggleHidden} bsSize='xsmall' bsStyle={this.getButtonStyle()}>{this.getButtonText()}</Button>
+                </div>
+            )
+        }
+    },
     getHeader() {
         let createdAt = new Moment(this.props.data.created_at)
         return (
             <div>
+                {this.getButton()}
                 {this.getTitle()}
                 <strong>{this.props.data.username} </strong>
                 <i><Timestamp value={createdAt} titleFormat="YYYY/MM/DD HH:mm" relative></Timestamp></i>
             </div>
         )
     },
-    getStyle() {
+    getButtonText() {
+        return this.props.data.hidden ? "Click to display" : "Click to hide"
+    },
+    getButtonStyle() {
+        return this.props.data.hidden ? "default" : "danger"
+    },
+    getHeaderStyle() {
         if (this.props.data.hidden) {
             return 'danger'
         }
         return this.ownerPost() ? "primary" : "default"
     },
-    validChildren() {
-        let children = this.props.data.children
-        if (this.exported()) {
-            return _.dropWhile(children, 'hidden', true)
-        } else {
-            return children
-        }
-    },
     getChildren() {
         if (this.hasChildren()) {
-            return this.validChildren().map((item, key) =>
+            return filterChildren(this.props.data.children).map((item, key) =>
                     <Contribution key={key} data={item}></Contribution>
             )
         }
@@ -72,8 +106,8 @@ const Contribution = React.createClass({
     render() {
         this.initData()
         return (
-            <Panel header={this.getHeader()} bsStyle={this.getStyle()} collapsable={!this.exported()} defaultExpanded={!this.props.data.hidden} onSelect={this.toggleHidden}>
-                <div dangerouslySetInnerHTML={{__html: md.render(this.props.data.body)}}></div>
+            <Panel ref="panel" header={this.getHeader()} bsStyle={this.getHeaderStyle()} collapsable defaultExpanded={!this.props.data.collapsed} onSelect={this.toggleCollapsed}>
+                <Markdown md={this.props.data.body}/>
                 {this.getChildren()}
             </Panel>
         )
@@ -81,6 +115,9 @@ const Contribution = React.createClass({
     initData() {
         if (!this.props.data.hasOwnProperty('hidden')) {
             this.props.data.hidden = false
+        }
+        if (!this.props.data.hasOwnProperty('collapsed')) {
+            this.props.data.collapsed = false
         }
     }
 })
@@ -98,7 +135,7 @@ const Posts = React.createClass({
 
         return (
             <div className="row">
-                {this.state.posts.map((item, key) =>
+                {filterChildren(this.state.posts).map((item, key) =>
                     <Contribution key={key} data={item}></Contribution>
                 )}
             </div>
