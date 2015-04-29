@@ -1,6 +1,6 @@
 import React from 'react'
 import Reflux from 'reflux'
-import {Button, Jumbotron} from 'react-bootstrap'
+import {Button, Jumbotron, Grid, Row, Col} from 'react-bootstrap'
 import _ from 'lodash'
 import JSZip from 'jszip'
 window.fetch = null
@@ -19,6 +19,7 @@ const Export = React.createClass({
         return response.text()
       }).then(function(text) {
         this.setState({html: text})
+        this.setZip()
       }.bind(this))
 
 
@@ -26,10 +27,19 @@ const Export = React.createClass({
         return response.text()
       }).then(function(text) {
         this.setState({js: text})
+        this.setZip()
       }.bind(this))
     },
 
-    zip() {
+    setZip() {
+      console.log('trying')
+      if((this.state.js && this.state.html)) {
+        console.log('ready')
+        this.setState({zip: this.makeZip()})
+      }
+    },
+
+    makeZip() {
       let zip = new JSZip()
       this.state.js = 'window.data=' + JSON.stringify(this.state.posts) + ';' + this.state.js
       console.log(this.state.js)
@@ -39,20 +49,27 @@ const Export = React.createClass({
     },
 
     download() {
-      let blob = this.zip().generate({type:"blob"})
+      let blob = this.state.zip.generate({type:"blob"})
       saveAs(blob, "edX-portfolio.zip")
-
+    },
+    ready() {
+      return (this.state.js && this.state.html && this.state.zip)
     },
 
     render() {
-        const ready = (this.state.js && this.state.html)
-        const buttonText = ready ? 'Download ZIP' : 'Preparing...'
+        const buttonText = this.ready() ? 'Download ZIP' : 'Preparing...'
         return (
-            <Jumbotron>
-              <h1>Congratulations!</h1>
-              <p>You're taking ownership of your data!</p>
-              <p><Button bsStyle="primary" bsSize="large" onClick={this.download} disabled={!ready} >{buttonText}</Button></p>
-            </Jumbotron>
+            <div>
+              <Jumbotron>
+                <h1>Congratulations!</h1>
+                <p>You're taking ownership of your data.</p>
+                <p><Button bsStyle="primary" bsSize="large" onClick={this.download} disabled={!this.ready()} >{buttonText}</Button></p>
+                  <small>You can host your website anywhere now! One easy solution is
+                  to <a href="http://www.maclife.com/article/howtos/how_host_your_website_dropbox">use Dropbox </a>
+                  as a free hosting service. Just unzip the files and move
+                  them all to a folder in Dropbox that is publically available.</small>
+              </Jumbotron>
+            </div>
         )
     }
 })
