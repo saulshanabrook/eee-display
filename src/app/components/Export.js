@@ -60,7 +60,7 @@ const Export = React.createClass({
     render() {
         const buttonText = this.ready() ? 'Download ZIP' : 'Preparing...'
         return (
-            <div>
+            <div>∏
               <Jumbotron>
                 <h1>Congratulations!</h1>
                 <p>You're taking ownership of your data.</p>

@@ -24,10 +24,10 @@ const SignIn = React.createClass({
     render() {
         return (
             <form>
-              <Input type='email' label='Email' valueLink={this.linkState("email")}/>
+              <Input type='email' label='Email' valueLink={this.linkState("email")} help="This doesn't have to be email that corresponds to the ID. It just has to be a valid edX account."/>
               <Input type='password' label='Password' valueLink={this.linkState("password")}/>
               <Input type='text' label='ID' valueLink={this.linkState("id_number")}
-                help="To find this, you must find a discussion post with you in it and click on your username. Then copy the last digits at the end of the URL that is your profile"
+                help="To find this, you must find a discussion post with you in it and click on your username. Then copy the last digits at the end of the URL, that is your ID."
               />
               <Input type='text' label='Institution' valueLink={this.linkState("institution")}/>
               <Input type='text' label='Course Number' valueLink={this.linkState("course_num")}/>
