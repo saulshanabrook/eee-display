@@ -42,6 +42,7 @@
     "es6-promise": "^2.1.1",
     "immutable": "^3.7.2",
     "isomorphic-fetch": "^2.0.2",
+    "jszip": "^2.5.0",
     "lodash": "^3.7.0",
     "moment": "^2.10.2",
     "query-string": "^1.0.0",

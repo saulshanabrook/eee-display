@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactRouter from 'react-router'
-import 'react-semantify'
 
 import {Navbar, Nav} from 'react-bootstrap'
 import {NavItemLink} from 'react-router-bootstrap'
