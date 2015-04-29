@@ -1,35 +1,27 @@
 import React from 'react'
 import ReactRouter from 'react-router'
-import {Menu, Segment, Section} from 'react-semantify'
+import 'react-semantify'
+
+import {Navbar, Nav} from 'react-bootstrap'
+import {NavItemLink} from 'react-router-bootstrap'
+
 
 const RouteHandler = ReactRouter.RouteHandler
-const Link = ReactRouter.Link
 
 const App = React.createClass({
     render() {
-        const styles = {
-            margin: 10
-        }
         return (
-            <Section style={styles}>
-                <Menu>
-                    <Link to="home" className="item">
-                        <i className="home icon"></i>
-                        Home
-                    </Link>
-                    <Link to="signin" className="item">
-                        <i className="bomb icon"></i>
-                        Sign In
-                    </Link>
-                </Menu>
+            <div className="container-fluid">
+                <Navbar brand="Edge Edx Exporter">
+                    <Nav>
+                        <NavItemLink to="signin">Sign In</NavItemLink>
+                        <NavItemLink to="posts">Edit</NavItemLink>
+                        <NavItemLink to="export">Export</NavItemLink>
+                    </Nav>
+                </Navbar>
                 <RouteHandler/>
-                <Segment>
-                    Git: &nbsp;
-                    <a href="https://github.com/hipertracker/react-es7">
-                        https://github.com/hipertracker/react-es7
-                    </a>
-                </Segment>
-            </Section>
+
+            </div>
         )
     }
 })

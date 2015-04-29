@@ -1,6 +1,5 @@
 const React = require('react')
 require('es6-promise').polyfill();
-import {mount} from './app/lib/tools'
 
 // For mounting App component into <section id="app"></section> use:
 //
@@ -10,8 +9,9 @@ import {mount} from './app/lib/tools'
 // else
 
 import App from './app/components/App'
-import Home from './app/components/Home'
+import Posts from './app/components/Posts'
 import SignIn from './app/components/SignIn'
+import Export from './app/components/Export'
 
 const Router = require('react-router')
 const Route = Router.Route
@@ -19,8 +19,9 @@ const DefaultRoute = Router.DefaultRoute
 
 const routes = (
     <Route name="app" path="/" handler={App}>
-        <Route name="home" handler={Home}/>
+        <Route name="posts" handler={Posts}/>
         <Route name="signin" handler={SignIn}/>
+        <Route name="export" handler={Export}/>
         <DefaultRoute handler={SignIn}/>
     </Route>
 )
@@ -29,7 +30,7 @@ Router.run(routes, function (Handler) {
     React.render(<Handler/>, document.getElementById('app'))
 })
 
-// or HTML5 pushstate history:
-//Router.run(routes, Router.HistoryLocation, function (Handler) {
+//or HTML5 pushstate history:
+// Router.run(routes, Router.HistoryLocation, function (Handler) {
 //    React.render(<Handler/>, document.getElementById('app'));
-//});
+// });

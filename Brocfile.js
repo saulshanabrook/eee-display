@@ -14,7 +14,10 @@ var staticFiles = new Funnel('src', {
 })
 
 // convert SCSS into CSS
-var cssFiles = compileSass(['src'], 'styles/app.scss', 'styles/app.css')
+var cssFiles = compileSass(['src'],
+    'styles/app.scss',
+    'styles/app.css'
+)
 
 // exclude tests from build
 var jsFiles = new Funnel('src', {

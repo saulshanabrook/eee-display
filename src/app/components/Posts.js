@@ -6,13 +6,18 @@ import Moment from 'moment'
 
 import {Panel} from 'react-bootstrap'
 
+import PostActions from '../actions/PostActions'
 import PostsStore from '../stores/PostsStore'
-import {m} from '../lib/tools'
 
 const T = React.PropTypes
 const md = new Remarkable()
 
 const Contribution = React.createClass({
+
+    handleCheck(event) {
+        PostActions.toggleChecked(this.props.data.id)
+    },
+
     title(data) {
         if (data.title) {
             return <h2>{data.title}</h2>
@@ -24,6 +29,9 @@ const Contribution = React.createClass({
         let createdAt = new Moment(data.created_at)
         return (
             <div>
+                <label className="pull-right">
+                  <input value={data.checked} onChange={this.handleCheck} type="checkbox"/> Display?
+                </label>
                 {this.title(data)}
                 <strong>{data.username} </strong>
                 <i><Timestamp value={createdAt} titleFormat="YYYY/MM/DD HH:mm" relative></Timestamp></i>
@@ -53,11 +61,11 @@ const Posts = React.createClass({
 
     render() {
         if (!this.state.posts.length) {
-            return <span/>
+            return <span>No posts!</span>
         }
 
         return (
-            <div>
+            <div className="row">
                 {this.state.posts.map((item, key) =>
                     <Contribution key={key} data={item}></Contribution>
                 )}

@@ -6,7 +6,6 @@ const UserStore = Reflux.createStore({
 
     listenables: [UserActions],
 
-
     state: {
         'status': '',
         'email': 'sshanabrook@colgate.edu',
@@ -30,7 +29,7 @@ const UserStore = Reflux.createStore({
     onLoginCompleted() {
         this.state.status = 'completed'
         this.trigger(this.state)
-        this.router.transitionTo('home')
+        this.router.transitionTo('posts')
     },
 
     onLoginFailed() {
