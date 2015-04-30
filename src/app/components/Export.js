@@ -16,7 +16,7 @@ const Export = React.createClass({
 
     componentWillMount() {
 
-      fetch('/index.html').then(function(response){
+      fetch('./index.html').then(function(response){
         return response.text()
       }).then(function(text) {
         this.setState({html: text})
@@ -24,7 +24,7 @@ const Export = React.createClass({
       }.bind(this))
 
 
-      fetch('/index.js').then(function(response){
+      fetch('./index.js').then(function(response){
         return response.text()
       }).then(function(text) {
         this.setState({js: text})
@@ -33,9 +33,7 @@ const Export = React.createClass({
     },
 
     setZip() {
-      console.log('trying')
       if((this.state.js && this.state.html)) {
-        console.log('ready')
         this.setState({zip: this.makeZip()})
       }
     },
@@ -43,14 +41,13 @@ const Export = React.createClass({
     makeZip() {
       let zip = new JSZip()
       this.state.js = 'window.posts=' + JSON.stringify(this.state.posts) + ';window.user=' + JSON.stringify(this.state.user) + ';' + this.state.js
-      console.log(this.state.js)
       zip.file('index.js', this.state.js)
       zip.file('index.html', this.state.html)
       return zip
     },
 
     download() {
-      let blob = this.state.zip.generate({type:"blob"})
+      let blob = this.state.zip.generate({type: "blob"})
       saveAs(blob, "edX-portfolio.zip")
     },
     ready() {
