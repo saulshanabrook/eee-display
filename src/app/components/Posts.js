@@ -31,6 +31,18 @@ function filterChildren(children) {
     }
 }
 
+function hasOwnerIn(post, ownerId) {
+    if (post.user_id == ownerId) {
+        return true
+    }
+    for (let child of (post.children || [])) {
+        if (hasOwnerIn(child, ownerId)) {
+            return true
+        }
+    }
+    return false
+}
+
 const Contribution = React.createClass({
     mixins: [Reflux.connect(UserStore, 'user')],
     toggleCollapsed(e) {
@@ -43,6 +55,9 @@ const Contribution = React.createClass({
         if (this.props.data.hidden) {
             this.props.data.collapsed = true
             this.refs.panel.setState({expanded: false})
+        } else {
+            this.props.data.collapsed = false
+            this.refs.panel.setState({expanded: true})
         }
         e.preventDefault()
         e.stopPropagation()
@@ -114,10 +129,10 @@ const Contribution = React.createClass({
     },
     initData() {
         if (!this.props.data.hasOwnProperty('hidden')) {
-            this.props.data.hidden = false
+            this.props.data.hidden = !hasOwnerIn(this.props.data, this.state.user.id_number)
         }
         if (!this.props.data.hasOwnProperty('collapsed')) {
-            this.props.data.collapsed = false
+            this.props.data.collapsed = this.props.data.hidden
         }
     }
 })
